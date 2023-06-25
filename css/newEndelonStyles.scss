@@ -1,0 +1,22 @@
+.newColumn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .newServergroup {
+        width: 100%;
+        background-color: red;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .serverCard {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}

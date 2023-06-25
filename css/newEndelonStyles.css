@@ -1,0 +1,19 @@
+.newColumn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.newColumn .newServergroup {
+  width: 100%;
+  background-color: red;
+  display: flex;
+  flex-direction: column;
+}
+.newColumn .serverCard {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.newColumn .serverCard:hover {
+  cursor: pointer;
+}/*# sourceMappingURL=newEndelonStyles.css.map */

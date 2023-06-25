@@ -1,0 +1,23 @@
+{
+    "manifest_version": 3,
+    "name": "EndelonUtil",
+    "version": "1.0.0",
+    "description": "Some QOL changes for Endelon Hosting",
+    "icons": {
+        "16": "img/endelonutils-16.png",
+        "32": "img/endelonutils-32.png",
+        "48": "img/endelonutils-48.png",
+        "128": "img/endelonutils-128.png"
+    },
+    "content_scripts": [
+        {
+            "matches": ["https://my.endelon-hosting.de/servers", "http://my.endelon-hosting.de/servers"],
+            "js": ["content.js"],
+            "css": [ "./css/newEndelonStyles.css" ]
+        },
+        {
+            "matches": ["https://my.endelon-hosting.de/*", "http://my.endelon-hosting.de/*"],
+            "js": ["removebg.js"]
+        }
+    ]
+}
