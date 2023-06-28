@@ -1,16 +1,51 @@
+// let mcServers = [];
+// let jsSerers = [];
+// let pyServers = [];
+// let otherServers = [];
+
 // setTimeout(() => {
 //     if (window.location.href !== "https://my.endelon-hosting.de/servers" && window.location.href !== "http://my.endelon-hosting.de/servers") return;
-//     generateProjects()
+//     getServers()
+//     addNewServerlist()
 // }, 1000)
 
-// function generateProjects() {
+// function addNewServerlist() {
+//     const container = document.getElementById("kt_app_content");
+//     if (!container) {
+//         console.log("NO CONTAINER FOUND!")
+//         return
+//     }
+
+//     container.innerHTML = "";
+
+//     // container.innerHTML += `
+//     // <div class='newColumn'>
+//     //     <div id='newServergroup_mc' class='newServergroup'></div>
+//     //     <div id='newServergroup_js' class='newServergroup'></div>
+//     //     <div id='newServergroup_py' class='newServergroup'></div>
+//     //     <div id='newServergroup_other' class='newServergroup'></div>
+//     // </div>
+//     // `
+
+//     // let newServergroup_mc = document.getElementById("newServergroup_mc");
+
+//     // console.log(mcServers)
+
+//     // mcServers.forEach((server, index) => {
+//     //     newServergroup_mc.innerHTML += `
+//     //     <a href='${server.href}' class='serverCard'>
+//     //         <span class='name'>${server.name}</span>
+//     //         <span class='details'>${server.details}</span>
+//     //         <span class='status ${server.status}'>${server.status}</span>
+//     //     </a>
+//     //     `
+//     // });
+// }
+
+// function getServers() {
 //     const projectElements = document.querySelectorAll(".invisible-a")
 
 //     if (!projectElements) return;
-//     let mcServers = [];
-//     let jsSerers = [];
-//     let pyServers = [];
-//     let otherServers = [];
 
 //     projectElements.forEach((projectEl, index) => {
 //         let project = {
@@ -31,7 +66,6 @@
 //                 break;
 //             case "Endelon Paper":
 //                 mcServers.push(project);
-//                 console.log("PAPAP")
 //                 break;
 //             case "Minecraft Forge":
 //                 mcServers.push(project);
@@ -49,33 +83,4 @@
 
 //         console.log(project)
 //     })
-
-//     const container = document.getElementById("kt_app_content_container");
-//     if (!container) {
-//         console.log("NO CONTAINER FOUND!")
-//         return
-//     }
-
-//     container.innerHTML += `
-//     <div class='newColumn'>
-//         <div id='newServergroup_mc' class='newServergroup'></div>
-//         <div id='newServergroup_js' class='newServergroup'></div>
-//         <div id='newServergroup_py' class='newServergroup'></div>
-//         <div id='newServergroup_other' class='newServergroup'></div>
-//     </div>
-//     `
-
-//     let newServergroup_mc = document.getElementById("newServergroup_mc");
-
-//     console.log(mcServers)
-
-//     mcServers.forEach((server, index) => {
-//         newServergroup_mc.innerHTML += `
-//         <a href='${server.href}' class='serverCard'>
-//             <span class='name'>${server.name}</span>
-//             <span class='details'>${server.details}</span>
-//             <span class='status ${server.status}'>${server.status}</span>
-//         </a>
-//         `
-//     });
 // }
